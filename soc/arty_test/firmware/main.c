@@ -7,7 +7,7 @@ void isr(void){
 
 
 int main(void){
-	uint32_t x = 0;
+	//uint32_t x = 0;
 
 	while (1){
 		/*
