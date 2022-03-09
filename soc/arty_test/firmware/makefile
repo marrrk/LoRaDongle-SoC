@@ -4,7 +4,7 @@
 CC_prefix := riscv64-unknown-elf-
 COMPILE := $(CC_prefix)gcc
 OBJCOPY := $(CC_prefix)objcopy
-
+LINK	:= $(CC_prefix)ld 		#usin this command in the linker stage is the source of unrecognised emulation mode
 
 BASE_DIR := .
 BUILD_DIR=$(BASE_DIR)/../build
@@ -40,28 +40,37 @@ LFLAGS     := $(CFLAGS)  -L$(LD_DIR)\
 
 # Compile process: CC .c Files -> AS .S files - LD .elf/o files -> Objcopy from .o/elf to .bin
 
-all: main.bin
+all: main.bin 
 
 
 test:
 	$(COMPILE) $(C_INCLUDES) $(CFLAGS) main.c -o test
 
 
-%.bin: %.elf
+main.bin: main.elf
 	@echo "OBJCOPY		$^ -> $@"
 	@$(OBJCOPY) -O binary $^ $@
 
 
-%.elf: %.o
+main.elf: crt0.o main.o
 	@echo "LD		$@"
 	@$(COMPILE) $(C_INCLUDES) $(LFLAGS) -o $@
 
-main.o:main.c
-	@echo "CC 		$@"
+
+
+main.o: main.c 
+	@echo "CC 		$< -> $@"
 	@$(COMPILE) -c $(C_INCLUDES) $(CFLAGS) $^ -o $@
 
-run:
-	litex_term /dev/ttyUSB1 --kernel=test.bin
+
+crt0.o: $(CPU_DIRECTORY)/crt0.S
+	@echo "AS 		$^ -> $@"
+	@$(COMPILE) -x assembler-with-cpp -c $< $(CFLAGS) -o $@ -MMD
+
+
+
+run_serial:
+	litex_term /dev/ttyUSB1 --kernel=main.bin
 
 clean: 
 	@rm  -f *.bin
@@ -69,3 +78,5 @@ clean:
 
 clean_test:
 	@rm -f test
+
+.PHONY: all run_serial clean clean_test
