@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Mar 10 17:05:19 2022
+# Process ID: 11803
+# Current directory: /home/markn/riscv/code/LoRaDongle/soc/arty_test/build/gateware
+# Command line: vivado -mode batch -source top.tcl
+# Log file: /home/markn/riscv/code/LoRaDongle/soc/arty_test/build/gateware/vivado.log
+# Journal file: /home/markn/riscv/code/LoRaDongle/soc/arty_test/build/gateware/vivado.jou
+# Running On: aurora, OS: Linux, CPU Frequency: 1600.000 MHz, CPU Physical cores: 16, Host memory: 16161 MB
+#-----------------------------------------------------------
+source top.tcl

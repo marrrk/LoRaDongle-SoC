@@ -40,22 +40,23 @@ LFLAGS     := $(CFLAGS)  -L$(LD_DIR)\
 
 # Compile process: CC .c Files -> AS .S files - LD .elf/o files -> Objcopy from .o/elf to .bin
 
-all: main.bin 
+all: firmware.bin 
 
 
 test:
 	$(COMPILE) $(C_INCLUDES) $(CFLAGS) main.c -o test
 
 
-main.bin: main.elf
+firmware.bin: firmware.elf
 	@echo "OBJCOPY		$^ -> $@"
 	@$(OBJCOPY) -O binary $^ $@
+	@chmod -x $@
 
 
-main.elf: crt0.o main.o
+firmware.elf: main.o crt0.o
 	@echo "LD		$@"
-	@$(COMPILE) $(C_INCLUDES) $(LFLAGS) -o $@
-
+	@$(COMPILE) $(C_INCLUDES) $^ $(LFLAGS) -o $@
+	@chmod -x $@
 
 
 main.o: main.c 
@@ -64,17 +65,17 @@ main.o: main.c
 
 
 crt0.o: $(CPU_DIRECTORY)/crt0.S
-	@echo "AS 		$^ -> $@"
-	@$(COMPILE) -x assembler-with-cpp -c $< $(CFLAGS) -o $@ -MMD
+	@echo "AS 		crt0.S -> $@"
+	@$(COMPILE) -c $(CFLAGS) -o $@ $<
 
 
 
 run_serial:
-	litex_term /dev/ttyUSB1 --kernel=main.bin
+	litex_term /dev/ttyUSB1 --kernel=firmware.bin
 
 clean: 
-	@rm  -f *.bin
-	@rm  -f *.o
+	@rm  -f *.bin  && rm -f *.elf
+	@rm  -f *.o && rm -f *.d
 
 clean_test:
 	@rm -f test

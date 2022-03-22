@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-| Date         : Thu Feb 24 10:33:48 2022
+| Date         : Tue Mar 22 11:31:20 2022
 | Host         : aurora running 64-bit Pop!_OS 20.04 LTS
 | Command      : report_timing_summary -file top_timing_synth.rpt
 | Design       : top

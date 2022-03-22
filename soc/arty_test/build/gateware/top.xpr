@@ -6,7 +6,7 @@
 <Project Version="7" Minor="56" Path="/home/markn/riscv/code/LoRaDongle/soc/arty_test/build/gateware/top.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="4d417c7b90a345daa91d2ca5479b9173"/>
+    <Option Name="Id" Val="b8a9b720f3bc4475bacdda5d2d18283b"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>

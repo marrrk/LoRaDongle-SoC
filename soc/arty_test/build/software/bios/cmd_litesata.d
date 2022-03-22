@@ -7,15 +7,15 @@ cmd_litesata.o: \
  /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/config.h \
  /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/ieeefp.h \
  /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/features.h \
- /home/markn/projects/fomu/fomu-toolchain-Linux/lib/gcc/riscv64-unknown-elf/8.3.0/include/float.h \
+ /home/markn/riscv/litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.3.0/include/float.h \
  /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_intsup.h \
  /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/_ansi.h \
  /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/stdint.h \
  /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/_default_types.h \
  /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_stdint.h \
- /home/markn/projects/fomu/fomu-toolchain-Linux/lib/gcc/riscv64-unknown-elf/8.3.0/include/stddef.h \
+ /home/markn/riscv/litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.3.0/include/stddef.h \
  /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_locale.h \
- /home/markn/projects/fomu/fomu-toolchain-Linux/lib/gcc/riscv64-unknown-elf/8.3.0/include/stdarg.h \
+ /home/markn/riscv/litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.3.0/include/stdarg.h \
  /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_types.h \
  /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/_types.h \
  /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/stdlib.h \
@@ -45,7 +45,7 @@ cmd_litesata.o: \
 
 /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/features.h:
 
-/home/markn/projects/fomu/fomu-toolchain-Linux/lib/gcc/riscv64-unknown-elf/8.3.0/include/float.h:
+/home/markn/riscv/litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.3.0/include/float.h:
 
 /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_intsup.h:
 
@@ -57,11 +57,11 @@ cmd_litesata.o: \
 
 /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_stdint.h:
 
-/home/markn/projects/fomu/fomu-toolchain-Linux/lib/gcc/riscv64-unknown-elf/8.3.0/include/stddef.h:
+/home/markn/riscv/litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.3.0/include/stddef.h:
 
 /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_locale.h:
 
-/home/markn/projects/fomu/fomu-toolchain-Linux/lib/gcc/riscv64-unknown-elf/8.3.0/include/stdarg.h:
+/home/markn/riscv/litex/riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.3.0/include/stdarg.h:
 
 /home/markn/riscv/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/_types.h:
 

@@ -1,5 +1,5 @@
-#include <generated/csr.h>
 #include <stdio.h>
+#include <generated/csr.h>
 
 void isr(void){
 	asm("nop");
@@ -7,20 +7,13 @@ void isr(void){
 
 
 int main(void){
-	//uint32_t x = 0;
 
 	while (1){
-		/*
-		leds_out_write(x);
-		if (x == 0x02) {
-			x = 0x00000001;
-		} else {
-			x = 0x00000002;
-		}
-		*/
-		leds_out_write(0x00000001);
+		leds_out_write(0x2);
 		//uart_rxtx_write('a');
 		//printf("Hello World\n");
 	}
+
+	return 0;
 
 }
